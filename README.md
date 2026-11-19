@@ -3,10 +3,10 @@
 কিশোরগঞ্জ-৫ (বাজিতপুর ও নিকলী) ভোটার তথ্য অ্যাপ **SmartVoter** এর ওয়েবসাইট।
 
 - ওয়েবসাইট: https://khanbhai19u-spec.github.io/SmartVoter/
-- সর্বশেষ APK: [Releases](https://github.com/khanbhai19u-spec/SmartVoter/releases/latest) (`SmartVoter.apk`)
+- সর্বশেষ APK: https://khanbhai19u-spec.github.io/SmartVoter/SmartVoter.apk
 - দাম: ৳৯৯ (বিকাশ / নগদ) — অ্যাপে অ্যাক্টিভেশন কোড দিয়ে চালু হয়
 - যোগাযোগ: WhatsApp 01831987090
 
 > SmartVoter নির্বাচন কমিশনের অফিসিয়াল অ্যাপ নয়। তথ্য কমিশনের প্রকাশিত চূড়ান্ত ভোটার তালিকা থেকে নেওয়া।
 
-অ্যাপের সোর্স কোড ও ভোটার ডাটা এই রিপোজিটরিতে নেই। APK তৈরি হয় প্রাইভেট রিপোজিটরি থেকে এবং এখানে Release হিসেবে প্রকাশিত হয়।
+অ্যাপের সোর্স কোড এই রিপোজিটরিতে নেই। সর্বশেষ APK: `SmartVoter.apk` (ওয়েবসাইটের ডাউনলোড বাটন)।
