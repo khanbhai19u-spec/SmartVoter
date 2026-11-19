@@ -4,10 +4,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>SmartVoter — ভোটার খুঁজুন মুহূর্তেই</title>
-<meta name="description" content="কিশোরগঞ্জ-৫ (বাজিতপুর ও নিকলী) এর ৩,৫৩,৫৬৬ ভোটারের তথ্য এক অ্যাপে। নাম, ভোটার নং, সিরিয়াল বা NID কার্ডের ছবি দিয়ে খুঁজুন। মাত্র ৳৯৯।" />
+<meta name="description" content="কিশোরগঞ্জ-৫ (বাজিতপুর ও নিকলী) এর ৩,৫৩,৫৬৬ ভোটারের তথ্য এক অ্যাপে। নাম, ভোটার নং, সিরিয়াল বা NID কার্ডের ছবি দিয়ে খুঁজুন।" />
 <meta name="theme-color" content="#04120d" />
+<meta name="smartvoter-version" content="3.2.0" />
 <meta property="og:title" content="SmartVoter — ভোটার খুঁজুন মুহূর্তেই" />
-<meta property="og:description" content="নাম, ভোটার নং, সিরিয়াল বা NID কার্ডের ছবি দিয়ে ভোটার খুঁজুন। কিশোরগঞ্জ-৫ • মাত্র ৳৯৯" />
+<meta property="og:description" content="নাম, ভোটার নং, সিরিয়াল বা NID কার্ডের ছবি দিয়ে ভোটার খুঁজুন। কিশোরগঞ্জ-৫" />
 <meta property="og:image" content="img/og.jpg" />
 <link rel="icon" href="img/icon-192.png" />
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
@@ -174,6 +175,14 @@ footer .disc b{color:var(--text)}
   section{padding-top:84px}.final{margin-top:84px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+.steps.s3{grid-template-columns:repeat(3,1fr)}
+.wacard{margin-top:40px;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;border-radius:28px;padding:26px;background:linear-gradient(135deg,#0f7a45,#064d2c);border:1px solid rgba(37,211,102,.4);box-shadow:0 24px 50px rgba(0,0,0,.35);position:relative;overflow:hidden}
+.wacard:before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;right:-90px;top:-140px;background:rgba(255,255,255,.08)}
+.wai{width:76px;height:76px;border-radius:24px;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 12px 26px rgba(37,211,102,.4)}
+.wat small{color:#c8f2da;font-weight:600}.wat .num{font-size:clamp(28px,4vw,38px);font-weight:700;letter-spacing:1.5px;line-height:1.2}.wat .sub{color:#c8f2da;font-size:15px}
+.wab{display:grid;gap:10px;position:relative}
+@media (max-width:960px){.wacard{grid-template-columns:auto 1fr}.wab{grid-column:span 2;grid-template-columns:1fr auto}}
+@media (max-width:620px){.steps.s3{grid-template-columns:1fr}.wacard{grid-template-columns:1fr;text-align:center;justify-items:center}.wab{grid-column:auto;grid-template-columns:1fr;width:100%}}
 </style>
 </head>
 <body>
@@ -194,7 +203,7 @@ footer .disc b{color:var(--text)}
 
 <header class="nav"><div class="in">
   <a class="logo" href="#"><img src="img/icon-192.png" alt="" /><span>Smart<b>Voter</b></span></a>
-  <nav class="links"><a href="#features">ফিচার</a><a href="#buy">কিভাবে কিনবেন</a><a href="#screens">স্ক্রিনশট</a><a href="#faq">প্রশ্ন</a></nav>
+  <nav class="links"><a href="#features">ফিচার</a><a href="#screens">স্ক্রিনশট</a><a href="#faq">প্রশ্ন</a></nav>
   <a class="btn gold sm" data-apk href="#"><svg width="18" height="18"><use href="#dl"/></svg>ডাউনলোড</a>
 </div></header>
 
@@ -202,17 +211,17 @@ footer .disc b{color:var(--text)}
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="tag rv"><span class="dot"></span>কিশোরগঞ্জ-৫ • বাজিতপুর ও নিকলী <span class="p">৳৯৯</span></span>
+      <span class="tag rv"><span class="dot"></span>কিশোরগঞ্জ-৫ • বাজিতপুর ও নিকলী</span>
       <h1 class="rv d1">যেকোনো ভোটার খুঁজুন <span class="gr">এক সেকেন্ডে</span></h1>
       <p class="lead rv d2"><b>৩,৫৩,৫৬৬ জন</b> ভোটারের নাম, ভোটার নং, সিরিয়াল ও এলাকা — সব এক অ্যাপে। NID কার্ড ক্যামেরায় ধরলেই ভোটার বের করে দেয়।</p>
       <div class="cta rv d3">
         <a class="btn gold shine" data-apk href="#"><svg width="22" height="22"><use href="#dl"/></svg>অ্যাপ ডাউনলোড করুন</a>
-        <a class="btn glass" href="#buy">কিভাবে কিনবেন?</a>
+        <a class="btn glass" href="#features">অ্যাপে কী আছে?</a>
       </div>
       <div class="mini rv d3">
-        <span><svg width="18" height="18"><use href="#ok"/></svg>একবার ৳৯৯, সারাজীবন</span>
+        <span><svg width="18" height="18"><use href="#ok"/></svg>পুরোটা বাংলায়</span>
         <span><svg width="18" height="18"><use href="#wf"/></svg>ইন্টারনেট লাগে না</span>
-        <span><svg width="18" height="18"><use href="#ok"/></svg>বিকাশ / নগদ</span>
+        <span><svg width="18" height="18"><use href="#ok"/></svg>Android ফোনে</span>
       </div>
     </div>
     <div class="stage rv d2">
@@ -267,36 +276,7 @@ footer .disc b{color:var(--text)}
   </div>
 </div></section>
 
-<section id="buy"><div class="wrap">
-  <div class="sh rv"><span class="k">কিভাবে কিনবেন</span><h2>৪ ধাপে অ্যাপ চালু</h2><p>৫ মিনিটের কাজ — টাকা পাঠালেই WhatsApp-এ কোড পেয়ে যাবেন</p></div>
-  <div class="steps">
-    <div class="st rv"><div class="n">১</div><h3>অ্যাপ নামান</h3><p>"অ্যাপ ডাউনলোড করুন" বাটন চেপে ইনস্টল করে খুলুন।</p></div>
-    <div class="st rv d1"><div class="n">২</div><h3>৳৯৯ পাঠান</h3><p>নিচের বিকাশ বা নগদ নম্বরে ৳৯৯ Send Money করুন।</p></div>
-    <div class="st rv d2"><div class="n">৩</div><h3>WhatsApp করুন</h3><p>অ্যাপে TrxID লিখে সবুজ WhatsApp বাটন চাপুন — বাকিটা অ্যাপ নিজেই লিখে দেবে।</p></div>
-    <div class="st rv d3"><div class="n">৪</div><h3>কোড দিন, শেষ!</h3><p>আমাদের পাঠানো কোড অ্যাপে লিখে "চালু করুন" চাপুন।</p></div>
-  </div>
-  <div class="pay">
-    <div class="pc bk rv"><div class="t">বিকাশ <i>পার্সোনাল</i></div><div class="num">01831987090</div><div class="sub">Send Money • ৳৯৯</div>
-      <button data-copy="01831987090"><svg width="18" height="18"><use href="#cp"/></svg>নম্বর কপি করুন</button></div>
-    <div class="pc ng rv d1"><div class="t">নগদ <i>পার্সোনাল</i></div><div class="num">01334285227</div><div class="sub">Send Money • ৳৯৯</div>
-      <button data-copy="01334285227"><svg width="18" height="18"><use href="#cp"/></svg>নম্বর কপি করুন</button></div>
-  </div>
-</div></section>
 
-<section><div class="wrap">
-  <div class="price rv"><div class="in">
-    <span class="badge">একবারই • কোনো মাসিক চার্জ নেই</span>
-    <div class="amt">৳৯৯</div><div class="per">সারাজীবন ব্যবহার</div>
-    <ul>
-      <li>৩,৫৩,৫৬৬ ভোটারের পুরো তালিকা</li>
-      <li>নাম / ভোটার নং / সিরিয়াল দিয়ে সার্চ</li>
-      <li>NID কার্ড অটো স্ক্যান</li>
-      <li>প্রিমিয়াম ভোটার স্লিপ — সেভ ও শেয়ার</li>
-      <li>সব নতুন আপডেট ফ্রি</li>
-    </ul>
-    <a class="btn gold shine" data-apk href="#"><svg width="22" height="22"><use href="#dl"/></svg>এখনই ডাউনলোড করুন</a>
-  </div></div>
-</div></section>
 
 <section id="screens">
   <div class="wrap"><div class="sh rv"><span class="k">স্ক্রিনশট</span><h2>দেখতে যেমন</h2><p>আধুনিক ডিজাইন, পুরোটা বাংলায়</p></div></div>
@@ -313,8 +293,6 @@ footer .disc b{color:var(--text)}
   <div class="sh rv"><span class="k">প্রশ্ন</span><h2>আপনার প্রশ্নের উত্তর</h2></div>
   <div class="faq rv">
     <details><summary>কোন এলাকার ভোটার আছে?</summary><p>কিশোরগঞ্জ-৫ আসনের বাজিতপুর ও নিকলী উপজেলার সব ইউনিয়ন ও বাজিতপুর পৌরসভা — মোট ৩,৫৩,৫৬৬ জন (চূড়ান্ত ভোটার তালিকা, প্রকাশ ২৪/১১/২০২৫)।</p></details>
-    <details><summary>টাকা পাঠানোর পর কোড কতক্ষণে পাব?</summary><p>সাধারণত কয়েক মিনিটের মধ্যেই WhatsApp-এ কোড পাঠিয়ে দেওয়া হয়।</p></details>
-    <details><summary>একটা কোড কয়টা ফোনে চলবে?</summary><p>একটা কোড শুধু একটা ফোনে চলে। নতুন ফোনে চালাতে চাইলে WhatsApp করুন।</p></details>
     <details><summary>ইনস্টল করতে "Unknown apps" বা Play Protect দেখাচ্ছে?</summary><p>অ্যাপটি Play Store-এর বাইরে, তাই এমন দেখায়। "Allow / অনুমতি দিন" চাপুন; Play Protect দেখালে "More details → Install anyway" চাপুন।</p></details>
     <details><summary>ইন্টারনেট লাগবে?</summary><p>না। একবার ইনস্টল হলে সার্চ, স্ক্যান, স্লিপ — সব ইন্টারনেট ছাড়াই চলে।</p></details>
     <details><summary>NID নম্বর দিয়ে খোঁজা যায়?</summary><p>ভোটার তালিকায় NID নম্বর থাকে না। তাই কার্ডের ছবি থেকে নাম ও জন্ম তারিখ পড়ে ভোটার খুঁজে দেওয়া হয়।</p></details>
@@ -323,22 +301,20 @@ footer .disc b{color:var(--text)}
 
 <div class="wrap"><div class="final rv">
   <img src="img/icon-192.png" alt="" />
-  <h2>আজই শুরু করুন</h2><p>মাত্র ৳৯৯ — একবার দিলেই সারাজীবন</p>
+  <h2>আজই নামিয়ে নিন</h2><p>৩,৫৩,৫৬৬ ভোটারের তথ্য — আপনার ফোনে</p>
   <div class="cta">
     <a class="btn gold shine" data-apk href="#"><svg width="22" height="22"><use href="#dl"/></svg>অ্যাপ ডাউনলোড করুন</a>
-    <a class="btn wa" href="https://wa.me/8801831987090" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#wa"/></svg>WhatsApp করুন</a>
   </div>
 </div></div>
 </main>
 
 <footer class="wrap">
   <div class="disc"><b>দ্রষ্টব্য:</b> SmartVoter একটি স্বাধীন অ্যাপ — বাংলাদেশ নির্বাচন কমিশনের অফিসিয়াল অ্যাপ নয়। তথ্য নির্বাচন কমিশনের প্রকাশিত চূড়ান্ত ভোটার তালিকা (ছবি ছাড়া) থেকে নেওয়া। শুধু বৈধ কাজে ব্যবহার করুন; কারো ব্যক্তিগত তথ্যের অপব্যবহার আইনত দণ্ডনীয়।</div>
-  © <span id="yr">২০২৬</span> SmartVoter • WhatsApp: 01831987090
+  © <span id="yr">২০২৬</span> SmartVoter
 </footer>
 
 <div class="sticky" id="sticky">
-  <a class="btn gold" data-apk href="#"><svg width="20" height="20"><use href="#dl"/></svg>ডাউনলোড • ৳৯৯</a>
-  <a class="btn wa" href="https://wa.me/8801831987090" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="26" height="26"><use href="#wa"/></svg></a>
+  <a class="btn gold" data-apk href="#"><svg width="20" height="20"><use href="#dl"/></svg>অ্যাপ ডাউনলোড করুন</a>
 </div>
 <div class="toast" id="toast"></div>
 
